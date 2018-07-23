@@ -1,0 +1,12 @@
+body {
+  margin-top: 5%;
+  margin-left: 5%;
+  background: #111111;
+  color: white;
+  font: 14px "Century Gothic", Futura, sans-serif;
+}
+
+NavLink {
+  color: yellow;
+  font-size: 30px;
+}
