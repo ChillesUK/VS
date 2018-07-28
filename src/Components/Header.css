@@ -1,0 +1,13 @@
+.HeaderBackground {
+    background: #001919;
+    border-bottom: 1px;
+    border-bottom-color: #000000;
+  }
+
+  .VSLogo {
+     padding-top: 16px;
+     padding-left: 10px;
+     padding-bottom: 2px;
+     min-width: 60px;
+     max-height: 79.391px;
+  }
