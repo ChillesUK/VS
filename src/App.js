@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
-import Home from './Components/Home';
+import Dashboard from './Components/Dashboard';
+import WorldMarkets from './Components/WorldMarkets';
 import About from './Components/About';
-import Contact from './Components/Contact';
+import Comparison from './Components/Comparison';
 import PageNotFound from './Components/PageNotFound';
-import Navigation from './Components/Navigation';
+import Header from './Components/Header'
+import './Components/styles.sass'
 
 class App extends Component {
   render() {
@@ -12,11 +14,12 @@ class App extends Component {
 
       <BrowserRouter>
       <div>
-      <Navigation />
+      <Header />
         <Switch>
-        <Route path='/' component={Home} exact />
+        <Route exact path='/Dashboard' component={Dashboard} />
+        <Route path='/World-Markets' component={WorldMarkets} />
         <Route path='/About' component={About} /> 
-        <Route path='/Contact-Us' component={Contact} />
+        <Route path='/Compare-Stock-Brokers' component={Comparison} />
         <Route component={PageNotFound} />
         </Switch>
         </div>

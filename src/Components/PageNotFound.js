@@ -3,7 +3,7 @@ import React from 'react';
 const PageNotFound = () => {
     return (
         <div>
-            <p>Page does not exist
+            <p>Error: Page does not exist
             </p>
         </div>
     );
