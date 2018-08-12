@@ -1,0 +1,30 @@
+.StylesSocialLinks{
+    min-width: 150px;
+    background: #001919;
+    float: right;
+    display: inline-block;
+    margin-top: -12px;
+}
+
+.VSTwitter {
+    float: right;
+    background: #001919;
+    width: 25px;
+    margin-right: 0.6em;
+
+}
+
+.StocksWhatsAppChat{
+    float: right;
+    background: #001919;
+    width: 80px;
+    margin-right: 0.6em;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 680px) {
+    .StylesSocialLinks {
+        display: none;
+    }
+}

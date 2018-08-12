@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  background: #070707;
+}
+
+p {
+  font-size: 0.75em;
+  color: #ffffff;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.fas {
+  font-size: 1.1em;
+  position: relative;
+  bottom: -0.5px;
+  left: 1px;
+}
