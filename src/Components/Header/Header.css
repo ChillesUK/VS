@@ -1,0 +1,29 @@
+.HeaderBar{
+  background: #001919;
+  width: 100%;
+  height: 17px;
+  color: #ffffff;
+  border-bottom: 1px solid;
+}
+
+.HeaderBackground {
+    background: #001919;
+
+  }
+
+  .VSLogo {
+     margin-top: 16px;
+     margin-left: 10px;
+     margin-bottom: 2px;
+     min-width: 60px;
+     max-height: 79.391px;
+  }
+
+/* 
+HEADER BACKGROUND
+    border-bottom: 1px;
+    border-bottom-color: #000000;
+    display: inline-block;
+    width: 100%;
+
+*/
