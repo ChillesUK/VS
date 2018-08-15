@@ -1,0 +1,21 @@
+.RegModalHeading {
+    text-align: center;
+    margin-right: 10px;
+}
+
+.RegModalText {
+    text-align: center;
+    margin-right: 35px;
+    margin-left: 35px;
+}
+
+.RegModalSubHeading {
+    margin: 10px 10px 10px 35px;
+}
+
+.RegModalButton {
+    margin-top: 14px;
+    margin-left: 175px;
+    font-size: 0.9em;
+}
+

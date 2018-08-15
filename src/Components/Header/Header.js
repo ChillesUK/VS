@@ -3,6 +3,7 @@ import React from 'react';
 import './Header.css';
 import Navigation from './Navigation/Navigation';
 import SocialLinks from './Navigation/SocialLinks/SocialLinks';
+import Authentication from './Authentication/Authentication';
 import {Link} from "react-router-dom";
 
 export default class Header extends React.Component {
@@ -17,6 +18,11 @@ export default class Header extends React.Component {
                                 <img className="VSLogo" src="./assets/VSLogo.png" alt="..." />
                             </Link>
                         </div>
+
+                        <div>
+                            <Authentication />
+                        </div>
+
                     </div>
                 </div>
 
