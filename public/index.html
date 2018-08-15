@@ -17,8 +17,29 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
   <title>React App</title>
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
   crossorigin="anonymous">
+
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <script>
+  // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDaRSKRKyfPxTVjYYIP_GumHxTpTLgppOI",
+        authDomain: "view-stocks.firebaseapp.com",
+        databaseURL: "https://view-stocks.firebaseio.com",
+        projectId: "view-stocks",
+        storageBucket: "view-stocks.appspot.com",
+        messagingSenderId: "367502625412"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+
+  
+  
+
 </head>
 
 <body>
@@ -29,5 +50,6 @@
     </noscript>
   -->
 </body>
+
 
 </html>

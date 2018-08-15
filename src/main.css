@@ -12,7 +12,6 @@ p {
 }
 .fas {
   font-size: 1.1em;
-  position: relative;
-  bottom: -0.5px;
   left: 1px;
+  vertical-align: text-bottom;
 }

@@ -28,24 +28,6 @@ class App extends Component {
   }
 }
 
-// Issue with how to render these path='#myModal' bits. Why is there a # ?
-// <Route path='#myModal' component={WhatsAppModal} />
-// import { WhatsAppModal } from './Components/WhatsAppModal'
-
 export default App;
 
-/*
-      <Router>
-      <div>
-      <Header />
-        <Switch>
-        <Route exact path='/Dashboard' component={Dashboard} />
-        <Route path='/World-Markets' component={WorldMarkets} />
-        <Route path='/About' component={About} /> 
-        <Route path='/Compare-Stock-Brokers' component={Comparison} />
-        <Route component={PageNotFound} />
-    
-        </Switch>
-        </div>
-      </Router>
-      */
+// Set Login/Signup quota to 10 on Firebase Console
