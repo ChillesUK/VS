@@ -8,7 +8,7 @@ const Dashboard = () => {
             <br></br>
             <p>This is a very important <Link to="/About">About Us Page</Link></p>
             
-        </div>
+        </div>                                                                      
     );
 };
 
