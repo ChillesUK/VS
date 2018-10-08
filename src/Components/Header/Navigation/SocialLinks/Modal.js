@@ -22,9 +22,10 @@ export class Modal extends React.Component  {
               <p><a href='https://chat.whatsapp.com/4iT3WKMh97y6Xixx6mjqTf'>https://slack.com/4iT3WKMh97y6Xixx6mjqTf</a></p>
           </div>
 
-            <button onClick={this.props.onClose}>
-            Close <i className="fas fa-times"></i>
+            <button className='RegModalButton' onClick={this.props.onClose} >
+            Close <i className="fas fa-times"> </i>
             </button>
+
         </div>
       </div>
     );

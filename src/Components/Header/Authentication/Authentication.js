@@ -6,7 +6,13 @@ export default class Authentication extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = { isOpen: false };
+        this.state = { 
+            isOpen: false,
+            emailSignIn: '',
+            passwordSignIn: '',
+         };
+
+         this.handleChange = this.handleChange.bind(this);
     }
 
     toggleModal = () => {
@@ -14,14 +20,32 @@ export default class Authentication extends React.Component {
             isOpen: !this.state.isOpen
         });
     }
+
+    // handleChange() simply updates state
+  handleChange(event) {
+    // Console.Log the field being changed by the user
+    console.log(event.target.name);
+
+    const value = event.target.value;
+    const name = event.target.name;
+    this.setState({
+      [name]: value
+    });
+  }
     
     render() {
 
+        const isInvalid =
+        this.state.passwordSignIn === '' ||
+        this.state.emailSignIn === '' ||
+        /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(this.state.emailSignIn) !== true;
+        
+        
         const bottomRow = {
             display: 'inline-block',
             float: 'left',
             width: '155px',
-            'margin-top': '1px',
+            'marginTop': '1px',
           };
 
         return (
@@ -29,11 +53,11 @@ export default class Authentication extends React.Component {
 
                 <div className='preLogin' >
 
-                    <input id='txtEmail' type='email' placeholder='Email' className='inputText' />
+                    <input name= 'emailSignIn' type='email' placeholder='Email' className='inputText' value={this.state.emailSignIn} onChange={this.handleChange}/>
 
-                    <input id='txtPassword' type='password' placeholder='Password' className='inputText' />
+                    <input name='passwordSignIn' type='password' placeholder='Password' className='inputText' value={this.state.passwordSignIn} onChange={this.handleChange}/>
 
-                    <button className='authButtons'>
+                    <button className='authButtons' disabled={isInvalid} >
                         Log In  <i className="fas fa-unlock-alt"></i>
                     </button>
 
@@ -60,7 +84,7 @@ export default class Authentication extends React.Component {
 
                     <button className='VSGoogleSignInButton'>
                     <img className="VSGoogleSignIn" src="./assets/GoogleButton.png" alt="..." />
-                    <p className='GoogleSignInText' >Sign in with Google</p>
+                    <p className='GoogleSignInText'  >Sign in with Google</p>
                     </button>
 
                     <RegistrationModal show={this.state.isOpen}

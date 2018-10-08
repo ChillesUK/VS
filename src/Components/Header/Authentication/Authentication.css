@@ -5,7 +5,8 @@
     right: 0;
     margin-top: 5px;
     margin-right: 0.2em;
-    max-width: 460px;
+    max-width: 465px;
+    min-width: 465px;
 }
 
 button {
@@ -26,6 +27,7 @@ button {
     cursor: pointer;
   }
   
+  
   button:focus {
     color: #000000;
     background: #fff;
@@ -33,12 +35,22 @@ button {
     outline: none;
   }
 
+
 .authButtons {
     margin-right: 0.6em;
     margin-top: 0.6em;
     padding-left: 0.8em;
     padding-right: 0.8em;
+    font-family: 'Roboto';
+    padding-top: 2px;
+    width: 65px;
 }
+
+.authButtons:disabled {
+  opacity: 0.65; 
+  cursor: not-allowed;
+}
+
 
 .inputText {
     margin-right: 0.6em;
@@ -87,7 +99,7 @@ button {
   float: right;
   margin-top: 6px;
   margin-right: 1.1em;
-  width: 131px;
+  width: 137px;
   padding: inherit;
 }
 
@@ -101,13 +113,15 @@ button {
 }
 
 .GoogleSignInText {
-  font-size: 0.9em;
+  font-size: 11px;
   text-decoration: none;
   color: #ffffff;
   padding: 0px;
   margin: 0px;
-  margin-top: 6px;
+  font-family: 'Roboto';
+  margin-top: 6.5px;
 }
+
 
 
 /*

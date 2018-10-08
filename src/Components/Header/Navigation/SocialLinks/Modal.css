@@ -6,7 +6,7 @@
   right: 0;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 1040;
-  padding-top: 150px;
+  padding-top: 85px;
 }
 
 .modalStyle {
@@ -24,8 +24,7 @@ h4 {
 }
 
 .well {
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin-top: 16px;
   padding-left: 10px;
   background-color: #070707;
   border: 1px solid #e3e3e3;
@@ -46,7 +45,8 @@ a {
   margin-right: auto;
   max-width: 25%;
   max-height: 70px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  margin-top: 8px;
 }
 
 button {
@@ -67,12 +67,6 @@ button:hover {
   cursor: pointer;
 }
 
-button:focus {
-  color: #000000;
-  background: #fff;
-  border-color: #fff;
-  outline: none;
-}
 
 .closeModal {
   float: right;
